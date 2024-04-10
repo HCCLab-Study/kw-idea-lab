@@ -1,3 +1,9 @@
+import Introduction from '@/components/introduction/Introduction';
+
 export default function Page() {
-  return <>홈페이지입니다</>;
+  return (
+    <main>
+      <Introduction title="Interactive Digital Experience Analytics Laboratory" />
+    </main>
+  );
 }
