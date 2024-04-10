@@ -10,6 +10,11 @@
     "lint-staged": "lint-staged",
     "postinstall": "husky install"
   },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "next": "14.1.4",
     "react": "^18",
