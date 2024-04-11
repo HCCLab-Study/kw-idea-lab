@@ -1,4 +1,8 @@
+import EnRecruitment from '@/app/home/_components/EnRecruitment';
+import Interest from '@/app/home/_components/Interest';
+import News from '@/app/home/_components/News';
 import Recruitment from '@/app/home/_components/Recruitment';
+import ArticleContainer from '@/components/article/ArticleContainer';
 import Introduction from '@/components/introduction/Introduction';
 import SectionContainer from '@/components/layout/SectionContainer';
 import { SectionContent } from '@/components/layout/SectionContent';
@@ -16,6 +20,14 @@ export default function Page() {
         <SectionHeader headerTitle="INTRODUCTION" />
         <SectionContent>
           <Recruitment />
+          <Interest />
+          <EnRecruitment />
+        </SectionContent>
+      </SectionContainer>
+      <SectionContainer>
+        <SectionHeader headerTitle="NEWS" />
+        <SectionContent>
+          <News />
         </SectionContent>
       </SectionContainer>
     </main>

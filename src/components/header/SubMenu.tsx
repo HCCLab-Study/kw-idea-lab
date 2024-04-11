@@ -1,4 +1,4 @@
-import { MenuItem } from '@/components/header/Navbar';
+import { MenuItem } from '@/constants/menuItems';
 import Link from 'next/link';
 import React from 'react';
 

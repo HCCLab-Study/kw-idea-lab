@@ -14,6 +14,9 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'homd-background-image': "url('/assets/image/background.png')",
       },
+      colors: {
+        'kw-blue': '#5A8BB6',
+      },
     },
   },
   plugins: [],

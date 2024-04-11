@@ -1,8 +1,8 @@
 'use client';
 
-import { MenuItem } from '@/components/header/Navbar';
 import SubMenu from '@/components/header/SubMenu';
-import React, { useState } from 'react';
+import { MenuItem } from '@/constants/menuItems';
+import { useState } from 'react';
 
 type Props = {
   subMenuItems: MenuItem[];
