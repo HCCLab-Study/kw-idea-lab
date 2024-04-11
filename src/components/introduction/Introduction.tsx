@@ -1,18 +1,22 @@
-import React from 'react';
+import Title from '@/components/introduction/Title';
+import React, { PropsWithChildren } from 'react';
 
 type Props = {
   title: string;
+  textColor?: string;
 };
 
-export default function Introduction({ title }: Props) {
+export default function Introduction({
+  title,
+  textColor = 'text-black',
+  children,
+}: PropsWithChildren<Props>) {
   return (
-    <section className="min-h-[340px] py-14 absolute top-0">
-      {/* <div></div> 아마 백그라운드 이미지?*/}
+    <section className="min-h-[340px] py-14 relative top-0 w-[100%]">
+      {children}
       <div>
-        <div className="py-6 px-6 relative">
-          <div className="px-7">
-            <h1 className="title text-[68px] break-words relative">{title}</h1>
-          </div>
+        <div className="py-6 px-6 relative flex justify-center">
+          <Title title={title} textColor={textColor} />
         </div>
       </div>
     </section>

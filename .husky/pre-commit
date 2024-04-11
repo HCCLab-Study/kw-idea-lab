@@ -1,1 +1,5 @@
-npm test
+#!/usr/bin/env sh
+# Git 커밋 시 lint-staged를 실행하는 훅을 걸어요
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run lint-staged

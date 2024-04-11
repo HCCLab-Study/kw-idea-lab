@@ -14,9 +14,7 @@ export default function ExpandableMenuButton({ subMenuItems }: Props) {
   const onActiveSubMenu = () => {
     setActive(true);
   };
-
-  console.log(active);
-
+  // TODO: Active
   return (
     <>
       <li className="flex relative" onClick={onActiveSubMenu}>

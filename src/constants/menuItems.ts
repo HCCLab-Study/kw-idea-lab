@@ -9,5 +9,5 @@ export const menuItems: MenuItem[] = [
   { name: 'Projects', href: '/projects' },
   { name: 'Publications', href: '/publications' },
   { name: 'Lectures', href: '/lectures' },
-  { name: '전공동아리', href: '/전공동아리' },
+  { name: '전공동아리', href: '/club' },
 ];

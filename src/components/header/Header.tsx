@@ -1,11 +1,11 @@
 import { oswald } from '@/app/layout';
 import HamburgerIcon from '@/components/header/HamburgerIcon';
+import { HeaderContainer } from '@/components/header/HeaderContainer';
 import Navbar from '@/components/header/Navbar';
 import SearchIcon from '@/components/header/SearchIcon';
 import { menuItems } from '@/constants/menuItems';
 import Image from 'next/image';
 import Link from 'next/link';
-import { PropsWithChildren } from 'react';
 
 export default function Header() {
   return (
@@ -15,14 +15,6 @@ export default function Header() {
       <Navbar menuItems={menuItems} />
       <SearchIcon />
     </HeaderContainer>
-  );
-}
-
-function HeaderContainer({ children }: PropsWithChildren) {
-  return (
-    <header className={`flex px-3 py-4 items-center max-h-14`}>
-      {children}
-    </header>
   );
 }
 
