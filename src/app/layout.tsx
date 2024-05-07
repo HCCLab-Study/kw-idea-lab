@@ -5,7 +5,7 @@ import Header from '@/components/header/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const oswald = Oswald({
+const oswald = Oswald({
   subsets: ['latin'],
   weight: ['200', '400', '700'],
   display: 'swap',
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={oswald.className}>
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-[100vh]`}>
         <Header />
         {children}
       </body>

@@ -1,15 +1,15 @@
 'use client';
 
 import { useCheckScrolled } from '@/hooks/useCheckScrolled';
-import { useSearchParams, useSelectedLayoutSegment } from 'next/navigation';
+import { useSelectedLayoutSegments } from 'next/navigation';
 import { PropsWithChildren } from 'react';
 
 export function HeaderContainer({ children }: PropsWithChildren) {
   const { scrolled } = useCheckScrolled();
-  const segment = useSelectedLayoutSegment();
+  const segment = useSelectedLayoutSegments();
 
   const initialStyleInHome =
-    segment === 'home' && !scrolled
+    segment?.includes('home') && !scrolled
       ? 'text-white fill-white'
       : 'text-black fill-black';
 

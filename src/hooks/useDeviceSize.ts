@@ -9,10 +9,10 @@ export function useDeviceSize() {
 }
 
 export function useHeaderSize() {
-  const showSix = useMediaQuery('(min-width: 880px)');
-  const showFive = useMediaQuery('(min-width:874px) and (max-width:879px)');
-  const showFour = useMediaQuery('(min-width:779px) and (max-width:873px)');
-  const showThree = useMediaQuery('(min-width:768px) and (max-width:779px)');
+  const showSix = useMediaQuery('(min-width: 941px)');
+  const showFive = useMediaQuery('(min-width:936px) and (max-width:940px)');
+  const showFour = useMediaQuery('(min-width:831px) and (max-width:935px)');
+  const showThree = useMediaQuery('(min-width:768px) and (max-width:830px)');
 
   const showHamburgerMenu = useMediaQuery('(max-width:767px)');
   let showNumber = 6;
